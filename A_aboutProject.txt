@@ -1,0 +1,56 @@
+Getting Started
+---------------
+
+->  Database Set Up
+->  REST Apis for CRUD
+
+setting Up
+-----------
+after setup the basic project
+
+
+Model : Listing----> place(apartment, flat, house, villa, hotel)
+-> title        ---->  String
+-> description  ---->  String
+-> image(URL)
+-> price        ---->  Number
+-> location     ---->  String
+-> country      ---->  String
+
+
+
+
+Index Route
+GET   /listings   ---->  return all listings
+
+Show Route (CRUD)-->   (Read)
+GET  /listings/:id ---> specific Listing data (view)
+
+Create Route(CRUD)-->   (Create)
+New & Create Route
+
+GET   /listings/new  -->  form (Create new listing)
+                           |
+POST  /listings     <-- submit  
+
+
+
+Update : Edit & Update Route
+GET    /listings/:id/edit ---> render form for edit
+                                    |
+PUT   /listings/:id     <--------submit    
+
+
+Delete  :Delete Route
+
+DELETE   /listings/:id
+
+
+Styling The Page
+-----------------
+
+
+What is EJS Mate?
+
+
+Creating Navbar
