@@ -70,9 +70,9 @@ const sessionOptions = {
     }
 };
 // server setup
-// app.get("/",(req, res)=>{
-//     res.send("Hi, i am root")
-// })
+app.get("/", (req, res) => {
+    res.redirect("/listings"); // sends user to listings page
+});
 
 
 
@@ -115,8 +115,8 @@ app.use((err, req, res, next)=>{
     // res.status(statusCode).send(message);
 })
 
+const port = process.env.PORT || 3000;
 
-
-app.listen(3000, () => {
-    console.log("Server is listening to Port 3000");
+app.listen(port, () => {
+    console.log(`Server is listening on Port ${port}`);
 });
