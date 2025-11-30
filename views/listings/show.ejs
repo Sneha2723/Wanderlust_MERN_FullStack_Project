@@ -25,7 +25,8 @@
   <br />
 </div>
 
-<% if(currUser && listing.owner._id.equals(currUser._id)) { %>
+<% if(currUser && listing.owner && listing.owner._id && listing.owner._id.equals(currUser._id)) { %>
+
 <div class="btns">
   <a
     href="/listings/<%=listing._id%>/edit"
