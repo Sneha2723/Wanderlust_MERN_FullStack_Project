@@ -15,8 +15,34 @@
   }
   .search-inp {
     border-radius: 25px;
-    padding: 0.5rem 3rem .5rem 3rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 0.9rem;
+  }
+
+   /* Custom responsive tweaks */
+  @media (max-width: 576px) { /* Small screens (phones) */
+    .search-inp {
+      padding: 0.4rem 2rem 0.4rem 2rem; /* Reduce padding for smaller screens */
+      font-size: 0.8rem;
+    }
+    .search-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.75rem; /* Adjust link spacing */
+    }
+  }
+
+  @media (max-width: 480px) { /* Extra small screens */
+    .d-flex { /* Target the search form */
+      flex-direction: column; /* Stack search input and button vertically */
+      align-items: stretch;
+    }
+    .search-inp {
+      margin-bottom: 0.5rem; /* Space between input and button */
+      margin-right: 0; /* Remove right margin since it's stacked */
+    }
   }
 </style>
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
