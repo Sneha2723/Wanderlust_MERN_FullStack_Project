@@ -20,28 +20,49 @@
   }
 
    /* Custom responsive tweaks */
-  @media (max-width: 576px) { /* Small screens (phones) */
+  @media (max-width: 768px) { /* Small screens (phones) */
     .search-inp {
-      padding: 0.4rem 2rem 0.4rem 2rem; /* Reduce padding for smaller screens */
-      font-size: 0.8rem;
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
     }
     .search-btn {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.8rem;
-    }
-    .navbar-nav .nav-link {
-      padding: 0.5rem 0.75rem; /* Adjust link spacing */
+      padding: 0.45rem 0.8rem;
+      font-size: 0.85rem;
     }
   }
 
-  @media (max-width: 480px) { /* Extra small screens */
-    .d-flex { /* Target the search form */
-      flex-direction: column; /* Stack search input and button vertically */
-      align-items: stretch;
+   /* Phones (max 576px) */
+  @media (max-width: 576px) {
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.75rem;
     }
+
+    .d-flex {
+      flex-direction: column !important;
+      width: 100%;
+    }
+
     .search-inp {
-      margin-bottom: 0.5rem; /* Space between input and button */
-      margin-right: 0; /* Remove right margin since it's stacked */
+      margin-bottom: 0.5rem;
+      width: 100%;
+      padding: 0.45rem 1rem;
+    }
+
+    .search-btn {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+
+  /* Extra small phones (max 400px) */
+  @media (max-width: 400px) {
+    .navbar-brand i {
+      font-size: 1.2rem;
+    }
+
+    .search-inp,
+    .search-btn {
+      font-size: 0.8rem;
     }
   }
 </style>
